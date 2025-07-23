@@ -1,0 +1,42 @@
+/* On enleve les marges & les padding par défaut */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header white on black */
+header,
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Changement fix dans le main */
+main {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main Switch : Black on White // Purple on Red */
+
+.mainElement {
+    background-color: red;
+    color: purple;
+}
+
+.formElement,
+.sendBtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* remove paragraph */
+
+.bilbO {
+    display: none;
+}
