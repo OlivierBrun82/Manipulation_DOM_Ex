@@ -42,15 +42,17 @@ magicBtn.addEventListener("click", bilbO);
 //  Récupératon d'info formulaire
 // ------------------------------
 
-const sendBtn = document.getElementById("sendBtn")
+const sendBtn = document.getElementById("sendBtn");
 // console.log(sendBtn);
 
 function getValue(){
     // récupérer la valeur (Value), dans l'input.
-    const inputAge = document.getElementById("age")
-    //  récupère la value age
+    const inputAge = document.getElementById("age");
+    const inputTxt = document.getElementById("txt");
+    //  récupère la value age et du texte
     const age = inputAge.value;
-    console.log(age);
+    const txt = inputTxt.value;
+    console.log(age, txt);
     
 }
 
