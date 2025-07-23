@@ -48,9 +48,11 @@ const sendBtn = document.getElementById("sendBtn")
 function getValue(){
     // récupérer la valeur (Value), dans l'input.
     const inputAge = document.getElementById("age")
+    //  récupère la value age
     const age = inputAge.value;
     console.log(age);
     
 }
 
+//  écoute le clique sur le bouton id sendBtn
 sendBtn.addEventListener("click", getValue);
