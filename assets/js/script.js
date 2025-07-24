@@ -52,9 +52,44 @@ function getValue(){
     //  récupère la value age et du texte
     const age = inputAge.value;
     const txt = inputTxt.value;
-    console.log(age, txt);
-    
+    // console.log(age, txt);
+
+    // Generate a span element
+    const span = document.createElement("span");
+
+    // Declare a variable type
+    let type;
+    // If age is = or + 18
+    if (age >= 18 ) {
+    // We call back the var type to record a string
+       type = "majeur";
+
+    //  if first condition is met or else
+    }else{
+    // We call back the var type to record a string
+        type = "mineur";
+    }
+
+    // We change textContent of my element span that we previously registered
+    span.textContent = "Tu a " + age +  " ans, tu es " + type;
+    // With the function appendChild we inject the element span  in the alertContainer
+    document.getElementById("alertContainer").appendChild(span);
 }
+
+// genere un élement html qui contiet notre :essage "[AGE] tu est [mineur/adult]"
+
+
+// function adultOrNot() {
+//     let result;
+//     if (age > 17) {
+//         result = "adult";
+//     } else {
+//         result = "mineur";
+//     }
+//     return result;
+// }
+
+// console.log(adultOrNot());
 
 //  écoute le clique sur le bouton id sendBtn
 sendBtn.addEventListener("click", getValue);
